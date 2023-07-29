@@ -8,3 +8,10 @@ spring:
     username: ${TELEGRAM_SVC_RABBIT_USER}
     password: ${TELEGRAM_SVC_RABBIT_PASS}
 
+telegram-svc:
+  queue-send-message: telegram-send-message
+  queue-send-photo: telegram-send-photo
+  queue-send-sticker: telegram-send-sticker
+  token: ${TELEGRAM_TOKEN}
+  url: https://api.telegram.org/bot{token}/{cmd}
+
