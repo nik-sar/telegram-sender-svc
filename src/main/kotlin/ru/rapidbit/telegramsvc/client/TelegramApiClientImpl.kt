@@ -24,7 +24,7 @@ class TelegramApiClientImpl(
         exchange(requestData, "sendMessage")
     }
 
-    override fun sendPhoto(chatId: String, caption: String, photo: Resource) {
+    override fun sendPhoto(chatId: String, caption: String?, photo: Resource) {
         val headers = HttpHeaders()
         headers.contentType = MediaType.MULTIPART_FORM_DATA
         val uri = createURI("sendPhoto")
