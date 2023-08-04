@@ -1,12 +1,11 @@
 server:
   port: ${TELEGRAM_SVC_SERVER_PORT}
 spring:
-  data:
-   rabbitmq:
-    host: ${TELEGRAM_SVC_RABBIT_HOST}
-    port: ${TELEGRAM_SVC_RABBIT_PORT}
-    username: ${TELEGRAM_SVC_RABBIT_USER}
-    password: ${TELEGRAM_SVC_RABBIT_PASS}
+  rabbitmq:
+  host: ${TELEGRAM_SVC_RABBIT_HOST}
+  port: ${TELEGRAM_SVC_RABBIT_PORT}
+  username: ${TELEGRAM_SVC_RABBIT_USER}
+  password: ${TELEGRAM_SVC_RABBIT_PASS}
 
 telegram-svc:
   queue-send-message: telegram-send-message
